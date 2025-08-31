@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Meta principaux -->
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site officiel du CSN Monod (Conseil du Service National) du Lycée Gustave Monod. Retrouvez nos actions, nos valeurs et suivez-nous sur Instagram.">
+  <title>CSN Monod – Conseil du Service National</title>
+
+  <!-- Sécurité renforcée -->
   <meta http-equiv="Content-Security-Policy"
         content="default-src 'self';
                  style-src 'self' 'unsafe-inline';
@@ -14,42 +20,49 @@
                  object-src 'none';
                  frame-ancestors 'none'">
   <meta name="referrer" content="no-referrer">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site officiel du CSN Monod (Conseil du Service National) du Lycée Gustave Monod. Retrouvez nos actions, nos valeurs et suivez-nous sur Instagram.">
-  <title>CSN Monod – Conseil du Service National</title>
 
   <!-- Feuille de style -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- ========================= HEADER ========================= -->
 <header class="site-header">
+  <!-- Logo + Nom -->
   <a href="#top" class="brand">
     <img src="assets/logo-csn.png" alt="Logo CSN Monod" width="48" height="48">
     <span>CSN Monod</span>
   </a>
+  <!-- Menu de navigation -->
   <nav>
     <ul>
       <li><a href="#valeurs">Valeurs</a></li>
       <li><a href="#actions">Actions</a></li>
       <li><a href="#rejoindre">Nous rejoindre</a></li>
-      <li><a class="button primary" href="https://www.instagram.com/monod_csn/" target="_blank" rel="noopener">Instagram</a></li>
+      <li>
+        <a class="button primary" href="https://www.instagram.com/monod_csn/" target="_blank" rel="noopener">
+          Instagram
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
 
+<!-- ========================= MAIN ========================= -->
 <main id="top">
-  <!-- Section Hero -->
+  <!-- Section HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>Conseil du Service National – Lycée Gustave Monod</h1>
-      <p class="lead">Engagement, solidarité, initiative. Découvrez nos projets et suivez notre actu.</p>
+      <p class="lead">Engagement, solidarité, initiative. Découvrez nos projets et suivez notre actualité.</p>
       <div class="cta-row">
-        <a class="button primary big" href="https://www.instagram.com/monod_csn/" target="_blank" rel="noopener">Suivre sur Instagram</a>
+        <a class="button primary big" href="https://www.instagram.com/monod_csn/" target="_blank" rel="noopener">
+          Suivre sur Instagram
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Section Valeurs -->
+  <!-- Section VALEURS -->
   <section id="valeurs" class="section">
     <h2>Nos valeurs</h2>
     <div class="cards">
@@ -68,46 +81,55 @@
     </div>
   </section>
 
-  <!-- Section Actions -->
+  <!-- Section ACTIONS -->
   <section id="actions" class="section">
     <h2>Nos actions</h2>
     <div class="grid-actions">
+      <!-- Course solidaire -->
       <article class="action">
-        <img src="assets/actions/course-solidaire.jpg" alt="Course solidaire">
+        <img src="assetsaction/course-solidaire.png" alt="Course solidaire">
         <div class="action-body">
           <h3>Course solidaire</h3>
+          <p>Participation à des événements sportifs pour soutenir des causes importantes.</p>
         </div>
       </article>
+      <!-- Commémoration -->
       <article class="action">
-        <img src="assets/actions/vente-crepes.jpg" alt="Vente de crêpes">
+        <img src="assetsaction/commemoration.png" alt="Commémoration">
         <div class="action-body">
-          <h3>Vente de crêpes</h3>
+          <h3>Commémoration</h3>
+          <p>Organisation d’événements pour honorer et se souvenir des moments importants de notre lycée et de la communauté.</p>
         </div>
       </article>
+      <!-- Marché de Noël -->
       <article class="action">
-        <img src="assets/actions/marche-noel.jpg" alt="Marché de Noël">
+        <img src="assetsaction/marche-noel.png" alt="Marché de Noël">
         <div class="action-body">
           <h3>Marché de Noël</h3>
+          <p>Vente et organisation d’événements festifs pour financer nos actions et fédérer la communauté scolaire.</p>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- Section Nous rejoindre -->
+  <!-- Section NOUS REJOINDRE -->
   <section id="rejoindre" class="section highlight">
     <h2>Nous rejoindre</h2>
     <p>Tu veux participer à nos actions ou proposer une idée ? Rejoins-nous !</p>
     <div class="cta-row">
-      <a class="button primary" href="https://www.instagram.com/monod_csn/" target="_blank" rel="noopener">Écris-nous sur Instagram</a>
+      <a class="button primary" href="https://www.instagram.com/monod_csn/" target="_blank" rel="noopener">
+        Écris-nous sur Instagram
+      </a>
     </div>
   </section>
 </main>
 
+<!-- ========================= FOOTER ========================= -->
 <footer class="site-footer">
   <p>&copy; <span id="year"></span> CSN Monod – Lycée Gustave Monod. Tous droits réservés.</p>
 </footer>
 
-<!-- Script pour l'année actuelle -->
+<!-- Script pour afficher automatiquement l'année actuelle -->
 <script src="script.js" defer></script>
 </body>
 </html>
